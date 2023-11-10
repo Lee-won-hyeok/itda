@@ -1,0 +1,47 @@
+
+.container {
+    width: 75%;
+    height: 100vh;
+    margin: 0 auto;
+    .mg {
+        text-align: left;
+        margin: 20vh 0 8vh 0;
+    }
+    .nomg {
+        text-align: left;
+        margin: 5vh 0;
+    }
+    .bt {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: .4em;
+        font-weight: 600;
+        font-size: 18px;
+        padding: .5em;
+        margin-top: 10%;
+        background-color: #ddd;
+        cursor: pointer;
+    }
+    .cardcontainer {
+        display: flex;
+        width: 90%;
+        margin: auto;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        gap: 20px;
+
+        .ImgCard {
+            width: 300px;
+            height: 300px;
+        }
+    }
+    .cardcontainer2 {
+        display: grid;
+        height: 100%;
+        grid-template-columns: repeat(2, 1fr); // 2개의 열
+        grid-template-rows: repeat(2, 30%); // 2개의 행, 각각 높이는 100px
+        gap: 30px; // 그리드 아이템 사이의 간격
+    }
+}

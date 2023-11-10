@@ -1,0 +1,110 @@
+$white: rgb(255, 255, 255);
+$blue: rgb(52, 152, 219);
+$red: rgb(192, 63, 63);
+
+.hd {
+    text-align: left;
+    position: relative;
+    margin: 5vh 0;
+    left: 10vw;
+    h1 {
+        font-size: 43px;
+        display: inline-block;
+    }
+    p {
+        font-size: 18px;
+        display: inline-block;
+    }
+}
+.col {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    height: 40px;
+    align-items: center;
+    input[type="text"], select{
+        padding: 6px 12px;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        resize: none;
+        font-size: 14px;
+        height: 40px;
+        text-align: left;
+        width: 300px;
+        flex: 0 1 s;
+    }
+    .r {
+        width: 75px;
+        font-weight: bold;
+        text-align: right;
+        margin-right: 10px;
+        flex: 0 0 auto;
+    }
+}
+
+.btn {
+    color: $white;
+    border-radius: 4px;
+    border: 0;
+    background-color: $blue;
+    cursor: pointer;
+    flex: 0 0 auto;
+}
+
+.sm {
+    font-size: 12px;
+    // width: 80px;
+    height: 27px;
+    line-height: 27px;
+}
+
+.ml {
+    margin-left: 10px;
+}
+
+.mt {
+    margin-top: 40px;
+}
+
+.big {
+    font-size: 21px;
+    height: 55px;
+    line-height: 55px;
+    padding: 0 10px;
+}
+
+.wrapper {
+    form {
+        width: fit-content;
+        margin: 0 auto;
+    }
+}
+
+.modal {
+    font-family: HanSans;
+    letter-spacing:-0.3px;
+    line-height: 140%;
+    height: 55px;
+}
+
+.wide {
+    width: 100%;
+    height: 40px;
+}
+
+.warn {
+    color: $red;
+    vertical-align: 5px;
+    font-size: 0.75em;
+    margin: 5px 0 0 85px;
+    width: max-content;
+}
+.conf {
+    color: $blue;
+    vertical-align: 5px;
+    font-size: 0.75em;
+    margin: 5px 0 0 85px;
+    width: max-content;
+}

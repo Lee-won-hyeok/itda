@@ -1,0 +1,53 @@
+$blue: rgb(52, 152, 219);
+$white: white;
+$black: rgb(0, 0, 0);
+
+.wrapper {
+    background-color: $white;
+    height: 50px;
+    font-family: HanSans;
+    color: $black;
+    display: flex;
+    flex-flow: row nowrap;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+.title {
+    margin-left: 30px;
+    text-wrap: nowrap;
+    h1 {
+        display: inline-block;
+        font-size: 35px;
+        margin: 0 15px;
+    }
+    div {
+        height: 26px;
+        display: inline-block;
+        span {
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 26px;
+        }
+    }
+}
+.menus {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 35px;
+    gap: 20px;
+    div {
+        width: 60px;
+        height: 26px;
+        a {
+            color: $black;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 26px;
+            letter-spacing: -1px;
+        }
+    }
+}

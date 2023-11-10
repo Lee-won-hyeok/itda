@@ -1,0 +1,117 @@
+$darkgray: rgb(200, 200, 201);
+$gray: rgb(240, 240, 241);
+$white: rgb(255, 255, 255);
+$blue: rgb(52, 152, 219);
+
+.searchContainer{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .searchWrapper {
+        width: 80%;
+        height: 80px;
+    }
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: $gray;
+    padding: 70px 15%;
+    .wrapper {
+        background-color: $white;
+        border-radius: 5px;
+        padding: 30px;
+    }
+}
+
+.cardContainer {
+    margin: -2%;
+    margin-top: 0%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    .cardwrapper{
+        width: 46%;
+        aspect-ratio: 2;
+        margin: 2%;
+        display: inline-block;
+    }
+}
+
+strong {
+    color: $blue;
+}
+
+h3 {
+    margin: 0;
+}
+.col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter {
+    height: 2em;
+    box-sizing: border-box;
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+    select {
+        height: 100%;
+        padding: 0 16px;
+        border: 1px solid $darkgray;
+        border-radius: 4px;
+        outline: 0;
+        font-size: 12px;
+    }
+    button {
+        height: 100%;
+        padding: 1px 18px;
+        border: 0;
+        border-radius: 4px;
+        background-color: $gray;
+        font-weight: bold;
+        font-size: 12px;
+        cursor: pointer;
+    }
+}
+
+.modal {
+    font-size: 16px;
+    text-align: left;
+    padding: 10px 30px;
+    width: 480px;
+    .col {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 20px 0;
+    }
+    .ml {
+        margin-left: .5em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+    .icon {
+        height: 32px;
+    }
+    .inline {
+        display: inline-block;
+    }
+    .p {
+        font-weight: bold;
+    }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}

@@ -1,0 +1,34 @@
+$default : rgb(220, 220, 221);
+$selected: rgb(52, 152, 219);
+$text_default: #333;
+$text_selected: white;
+
+.container {
+    text-align: left;
+    .toggle {
+        display: inline-block;
+        background-color: $default;
+        color: $text_default;
+        border-radius: 2px;
+        width: 70px;
+        margin: 8px;
+        height: 30px;
+        cursor: pointer;
+        span {
+            line-height: 30px;
+            font-size: .8em;
+            text-wrap: nowrap;
+            font-weight: bold;
+        }
+    }
+    .toggle:first-child {
+        margin-left: 0;
+    }
+    .toggle:last-child {
+        margin-right: 0;
+    }
+    .on {
+        background-color: $selected;
+        color: $text_selected;
+    }
+}

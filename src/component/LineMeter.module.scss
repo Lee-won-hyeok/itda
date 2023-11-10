@@ -1,0 +1,38 @@
+$default-color: #ccc;
+$active-color: #4be061;
+$line-size: 6px;
+
+.wrapper {
+    .container {
+        position: relative;
+        .body {
+            position: absolute;
+            width: 100%;
+            border: 0;
+            height: $line-size;
+            border-radius: calc(#{$line-size} / 2);
+            background-color: $default-color;
+        }
+        .meter {
+            position: absolute;
+            // width: set by js;
+            border: 0;
+            height: $line-size;
+            border-radius: calc(#{$line-size} / 2);
+            background-color: $active-color;
+        }
+        .inputs {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-top: 20px;
+            input {
+                width: 5em;
+                flex: 0 0 5em;
+                outline: 0;
+                border-radius: 4px;
+                padding: 6px;
+            }
+        }
+    }
+}

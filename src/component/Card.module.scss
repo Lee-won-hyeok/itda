@@ -1,0 +1,33 @@
+$darkgray: rgb(200, 200, 201);
+$gray: rgb(240, 240, 241);
+$white: rgb(255, 255, 255);
+$blue: rgb(52, 152, 219);
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    .container {
+        width: 100%;
+        height: 100%;
+        background-color: $gray;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 4px;
+        padding: 1em;
+        cursor: pointer;
+        h2 {
+            margin: 0;
+        }
+        .col {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            gap: 1em;
+            top: 60%;
+        }
+        .tags{
+            text-align: left;
+            font-size: 12px;
+        }
+    }
+}

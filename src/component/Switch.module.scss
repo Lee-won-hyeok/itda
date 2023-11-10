@@ -1,0 +1,38 @@
+$height: 24px;
+$radius: 20px;
+$padding: 2px;
+$active-color: #4be061;
+$inactive-color: #ccc;
+
+.wrapper {
+    position: relative;
+    .container{
+        background-color: $inactive-color;
+        width: calc(#{$height} * 2);
+        height: $height;
+        border: 0;
+        border-radius: 15px;
+        padding: 0 $padding;
+        cursor: pointer;
+        transition: all 0.3s;
+        .ball {
+            position: absolute;
+            top: calc((#{$height} - #{$radius}) / 2);
+            left: $padding;
+            border: 0;
+            border-radius: 50%;
+            width: $radius;
+            height: $radius;
+            background-color: white;
+            box-shadow: 0 4px 1px rgba(0,0,0,.15);
+            transition: all 0.3s;
+        }
+
+        .active {
+            left: calc(#{$height} * 2 - #{$radius} - #{$padding})
+        }
+    }
+    >.active {
+        background-color: $active-color;
+    }
+}

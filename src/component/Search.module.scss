@@ -1,0 +1,27 @@
+$width: 100%;
+$height: 40px;
+$gray: #ccc;
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: .5px solid $gray;
+    border-radius: 4px;
+    .search {
+        width: calc(#{$width} - #{$height});
+        height: $height;
+        border: 0;
+        outline: 0;
+    }
+    .iconarea {
+        height: $height;
+        cursor: pointer;
+        background-color: $gray;
+        span {
+            font-size: $height;
+            line-height: $height;
+            color: white;
+        }
+    }
+}
